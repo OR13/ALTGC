@@ -1,7 +1,7 @@
 
 ### @ngInject ###
 LegacyController = ['$timeout', 'webDevTec', ($timeout, webDevTec) ->
-  @.$inject = ['$timeout', 'webDevTec']
+
   vm = @
   vm.awesomeThings = []
   vm.classAnimation = ''
@@ -30,6 +30,6 @@ LegacyController = ['$timeout', 'webDevTec', ($timeout, webDevTec) ->
 
   @activate()
   return
-]
 
+]
 angular.module("ALTGC").controller('LegacyController', LegacyController)

@@ -1,7 +1,6 @@
 
-### @ngInject ###
-webDevTec = ($log) ->
-  @.$inject = ['$log', 'webDevTec']
+webDevTec = ['$log', ($log) ->
+
   $log.debug('testing webDevTec debug...')
   data = [
     {
@@ -73,5 +72,7 @@ webDevTec = ($log) ->
 
   @getTec = getTec
   return
+]
 
 angular.module("ALTGC").service('webDevTec', webDevTec)
+
