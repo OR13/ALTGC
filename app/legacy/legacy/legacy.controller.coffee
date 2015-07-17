@@ -1,6 +1,7 @@
 
 ### @ngInject ###
 LegacyController = ($timeout, webDevTec) ->
+  @.$inject = ['$timeout', 'webDevTec']
 
   vm = @
   vm.awesomeThings = []
@@ -32,6 +33,5 @@ LegacyController = ($timeout, webDevTec) ->
   return
 
 
-LegacyController.$inject = ['$timeout', 'webDevTec']
 
 angular.module("ALTGC").controller('LegacyController', LegacyController)
